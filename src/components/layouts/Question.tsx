@@ -13,9 +13,8 @@ export default function Question() {
   const handleNext = () => {
     if (canProceed) {
       nextQuestion();
-      // Переход на следующий вопрос или на результат
       if (currentQuestionIndex + 1 >= questions.length) {
-        navigate('/diagnostic/result'); // или другой маршрут
+        navigate('/diagnostic/result');
       } else {
         navigate(`/questions/${currentQuestionIndex + 1}`);
       }
@@ -37,7 +36,7 @@ export default function Question() {
             disabled={!canProceed}
             iconRight={<ArrowLeft className="w-5 h-5 rotate-180" />}
             className="bg-linear-to-r from-blue-500 to-cyan-500 text-white"
-            variant={canProceed ? 'primary' : 'secondary'}
+            variant="primary"
           >
             Далее
           </Button>

@@ -164,7 +164,6 @@ export default function CaseDetailPropaganda() {
             {/* Кнопка возврата */}
             <div className="text-center">
               <Button
-                link
                 linkTo="/case-study"
                 variant="outline"
                 className="py-3 px-8"

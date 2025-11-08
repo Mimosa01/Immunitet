@@ -43,7 +43,6 @@ export default function DiagnosticInterpretation({ weights }: DiagnosticInterpre
           <Button
             iconLeft={<ArrowRight className="w-4 h-4" />}
             className="bg-linear-to-r from-blue-500 to-cyan-500 text-white"
-            link
             linkTo='/'
           >
             Прокачать навыки

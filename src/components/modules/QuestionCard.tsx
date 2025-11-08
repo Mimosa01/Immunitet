@@ -37,9 +37,9 @@ function QuestionCard({
         </div>
       </div>
 
-      <div className="space-y-4">
+      <div className="flex flex-col gap-4">
         {options.map((option) => (
-          <Answer id={option.id} text={option.text} weights={option.weights} />
+          <Answer key={option.id} id={option.id} text={option.text} weights={option.weights} />
         ))}
       </div>
     </div>

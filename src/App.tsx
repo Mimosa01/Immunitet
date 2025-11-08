@@ -11,10 +11,12 @@ import DiagnosticResultPage from "./pages/DiagnosticResult"
 import CaseDetailFan from "./pages/CaseDetailFan"
 import CaseDetailPropaganda from "./pages/CaseDetailPropaganda"
 import CaseDetailCult from "./pages/CaseDetailCult"
+import ScrollToTop from "./components/ui/ScrollToTop"
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={ <Home /> }/>
         <Route element={<DiagnosticLayout />}>

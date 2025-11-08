@@ -1,4 +1,3 @@
-import { Link } from 'react-router';
 import { Play } from 'lucide-react';
 import type { IconComponent } from '../../types/types';
 import Button from '../ui/Button';
@@ -23,8 +22,7 @@ export default function ModuleCard({ module }: ModuleCardProps) {
   const Icon = module.icon;
 
   return (
-    <Link
-      to={module.link}
+    <div
       className={`block relative rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${module.gradient} border border-white/20`}
     >
       <div className="absolute top-4 right-4">
@@ -39,12 +37,13 @@ export default function ModuleCard({ module }: ModuleCardProps) {
         <p className="text-gray-600 mb-6 leading-relaxed">{module.description}</p>
 
         <Button
+          linkTo={module.link}
           iconLeft={<Play className="w-4 h-4" />}
           className={`w-full py-3 px-6 rounded-xl font-semibold text-white bg-linear-to-r ${module.color} hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2`}
         >
           {module.action}
         </Button>
       </div>
-    </Link>
+    </div>
   );
 }

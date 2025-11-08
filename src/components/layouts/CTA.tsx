@@ -17,8 +17,8 @@ function CTA() {
           Начните с любого модуля и сделайте первый шаг к критическому мышлению
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="primary">Начать обучение</Button>
-          <Button variant="secondary">Узнать больше</Button>
+          <Button linkTo="arsenal" variant="primary" className="w-fit">Начать обучение</Button>
+          {/* <Button disabled variant="secondary">Узнать больше</Button> */}
         </div>
       </div>
     </section>
